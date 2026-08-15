@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBMAX - 海外で日本のテレビ視聴</title>
+    <meta name="description" content="ベトナムで日本のTV番組をリアルタイム視聴！66チャンネル対応、4週間の録画機能、日本VPNルーター内蔵のBBMAX。">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="images/BBMAX.svg" alt="BBMAX Logo"></a>
+            </div>
+
+            <!-- Slogan ở giữa -->
+            <div class="header-slogan">
+                海外で日本のテレビ視聴！
+            </div>
+
+            <!-- Nút Hamburger Icon 3 gạch -->
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SIDEBAR MENU (Trượt từ bên phải ra) -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <nav class="side-menu" id="sideMenu" aria-label="Sidebar Menu">
+        <button class="close-btn" id="closeBtn" aria-label="Close Menu">&times;</button>
+        
+        <ul class="side-menu-links">
+            <li><a href="#details-section">サービスの詳細</a></li>
+            <li><a href="#pricing-section">サービス料金</a></li>
+            <li><a href="#workflow-section">利用開始の流れ</a></li>
+            <li><a href="moshikomi.html" class="btn-highlight">お申込み</a></li>
+            <li><a href="contact.html" class="btn-outline-menu">お問合せ</a></li>
+            
+            <li class="menu-divider"></li>
+            <li><a href="faq.html">よくある質問・不具合解決</a></li>
+        </ul>
+
+        <div class="side-menu-footer">
+            <div class="phone-info">
+                <p>☎ 093-905-6990 <small>(日本語対応)</small></p>
+                <p>☎ 090-333-7460 <small>(ベトナム語対応)</small></p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-nhk">
+            <div class="hero-grid">
+                <!-- Ô 1 -->
+                <div class="grid-item animated-item">
+                    <img src="images/tv-show-1.jpg" class="img-old" alt="テレビ番組 1">
+                    <img src="images/tv-show-1-alt.jpg" class="img-new" alt="テレビ番組 1 Alt">
+                </div>
+                <!-- Ô 2 -->
+                <div class="grid-item animated-item">
+                    <img src="images/tv-show-2.jpg" class="img-old" alt="テレビ番組 2">
+                    <img src="images/tv-show-2-alt.jpg" class="img-new" alt="テレビ番組 2 Alt">
+                </div>
+                <!-- Ô 3 -->
+                <div class="grid-item animated-item">
+                    <img src="images/tv-show-3.jpg" class="img-old" alt="テレビ番組 3">
+                    <img src="images/tv-show-3-alt.jpg" class="img-new" alt="テレビ番組 3 Alt">
+                </div>
+                <!-- Ô 4 -->
+                <div class="grid-item animated-item">
+                    <img src="images/tv-show-4.jpg" class="img-old" alt="テレビ番組 4">
+                    <img src="images/tv-show-4-alt.jpg" class="img-new" alt="テレビ番組 4 Alt">
+                </div>
+                <!-- Ô 5 -->
+                <div class="grid-item animated-item">
+                    <img src="images/tv-show-5.jpg" class="img-old" alt="テレビ番組 5">
+                    <img src="images/tv-show-5-alt.jpg" class="img-new" alt="テレビ番組 5 Alt">
+                </div>
+                <!-- Ô 6 -->
+                <div class="grid-item animated-item">
+                    <img src="images/tv-show-6.jpg" class="img-old" alt="テレビ番組 6">
+                    <img src="images/tv-show-6-alt.jpg" class="img-new" alt="テレビ番組 6 Alt">
+                </div>
+            </div>
+
+            <div class="hero-overlay">
+                <h1>BBMAX</h1>
+                <p>ベトナムで日本の TV 番組を リアルタイム視聴</p>
+                <div class="hero-btns">
+                    <a href="moshikomi.html" class="btn-primary">今すぐ申し込む</a>
+                    <a href="#details-section" class="btn-outline">詳細を見る</a>
+                </div>
+            </div>
+
+            <div class="hero-bottom-bar">
+                <span>スムーズな視聴 • 安定した回線 • 高画質</span>
+            </div>
+        </section>
+
+        <!-- SECTION CHI TIẾT DỊCH VỤ BBMAX -->
+        <section id="details-section" class="details-section">
+            <div class="container">
+                
+                <!-- 1. Tiêu đề chính -->
+                <div class="details-header">
+                    <h2 class="section-title">ベトナムで日本の番組を見るならBBMAX！</h2>
+                    <span class="badge-green">ベトナム全域で対応可能</span>
+                </div>
+
+                <!-- 2. Thống kê nổi bật -->
+                <div class="highlights-banner">
+    <div class="hl-item">
+        <span class="hl-number">66</span>
+        <span class="hl-text">全66ch 視聴可能</span>
+    </div>
+    <div class="hl-item">
+        <span class="hl-number">4</span>
+        <span class="hl-text">4週間の録画視聴可能</span>
+    </div>
+    <div class="hl-item">
+        <span class="hl-icon"><i class="fas fa-plug" aria-hidden="true"></i></span>
+        <span class="hl-text">簡単接続</span>
+    </div>
+</div>
+
+               <!-- 3. Năm đặc trưng nổi bật -->
+<h3 class="sub-section-title"><i class="fas fa-star" aria-hidden="true"></i> BBMAXの特徴 5つ！</h3>
+<div class="features-grid">
+    
+    <!-- CARD 1 (ĐƯA LÊN ĐẦU): DÙNG THỬ 7 NGÀY & FREESHIP -->
+    <article class="feature-card feature-card-highlight">
+    <div class="feature-icon"><i class="fas fa-gift" aria-hidden="true"></i></div>
+    <h4>7日間の無料体験＆出張設置費0円</h4>
+    <p>まずは7日間完全無料でお試しいただけます！ホーチミン・ハノイ市内は専門スタッフによる出張設置費も無料（0円）で安心です。<br>※市外または他エリアの場合は郵送対応となります。（無料）</p>
+</article>
+
+    <!-- CARD 2: Server riêng -->
+    <article class="feature-card">
+        <div class="feature-icon"><i class="fas fa-server" aria-hidden="true"></i></div>
+        <h4>独自の回線・サーバーを所有し安定した高画質をご提供</h4>
+        <p>BBMAXでは独自の回線、サーバーを所有することで、映像が途中で止まるなどということは少なく、安定した映像配信をお届けしています。更に、日本にいた時と同じようにフルHDでご覧いただけます。</p>
+    </article>
+
+    <!-- CARD 3: Smartphone / Tablet -->
+    <article class="feature-card">
+        <div class="feature-icon"><i class="fas fa-mobile-alt" aria-hidden="true"></i></div>
+        <h4>スマホ・タブレットでもご視聴可能</h4>
+        <p>新規ご契約頂いたお客様全員に、スマホ・タブレットでも日本のテレビ番組をご視聴できるアプリを無料でプレゼント。<br>※視聴可能番組はご契約プランと同様です。</p>
+    </article>
+
+    <!-- CARD 4: Hoàn tiền khi hủy -->
+    <article class="feature-card">
+        <div class="feature-icon"><i class="fas fa-undo-alt" aria-hidden="true"></i></div>
+        <h4>途中で解約しても残月分の金額を返金</h4>
+        <p>複数月でのご契約途中で解約の場合、残月分の金額は当月末で締め、残額は返金いたします。</p>
+    </article>
+
+    <!-- CARD 5: Hỗ trợ tiếng Nhật -->
+    <article class="feature-card">
+        <div class="feature-icon"><i class="fas fa-headset" aria-hidden="true"></i></div>
+        <h4>安心の日本語対応</h4>
+        <p>お問い合わせの際には日本語対応が可能ですので、トラブルなどが起きた際にも安心してご利用いただけます。</p>
+    </article>
+
+</div>
+
+                <!-- 4. 3 Trụ cột dịch vụ -->
+                <div id="pillars-section" class="pillars-container">
+    <h3 class="sub-section-title"><i class="fas fa-globe-asia" aria-hidden="true"></i> 日本のテレビで海外赴任生活をサポート</h3>
+    <div class="pillars-grid">
+
+        <!-- CARD 1: Đưa nội dung Smartphone/Tablet lên vị trí Số 1 -->
+        <article class="pillar-card">
+            <div class="pillar-badge">1</div>
+            <h4>家ではTV、<br>
+                外ではスマホ・タブレットで</h4>
+            <div class="pillar-img-box">
+                <img src="images/watchtv.jpg" alt="スマホでいつでもどこでもテレビ視聴" loading="lazy">
+            </div>
+            <p class="pillar-desc"><strong>ネット環境があればいつでもどこでも！</strong></p>
+            <p class="app-list">いつでもどこでも日本のテレビが見放題</p>
+        </article>
+
+        <!-- CARD 2: Nội dung TV Nhật Bản (Cũ số 1) -->
+        <article class="pillar-card">
+            <div class="pillar-badge">2</div>
+            <h4>豊富な番組</h4>
+            <div class="pillar-img-box">
+                <img src="images/tv-logos.png" alt="日本民放テレビのロゴ一覧" loading="lazy">
+            </div>
+            <div class="pillar-tags">
+                <span>地デジ</span>
+                <span>BS</span>
+                <span>CS</span>
+            </div>
+            <p class="pillar-desc">地上波・BS・CS 全66局視聴可能</p>
+        </article>
+
+        <!-- CARD 3: Nội dung Chống chặn IP (Cũ số 2) -->
+        <article class="pillar-card">
+            <div class="pillar-badge">3</div>
+            <h4>VPNルーター内蔵</h4>
+            <div class="pillar-img-box">
+                <img src="images/box.png" alt="BBMAX TV BOX" loading="lazy">
+            </div>
+            <p class="pillar-desc"><strong>※別途お申し込み要</strong></p>
+            <p class="app-list">TVer / ABEMA / Prime Video / Netflix / DAZN など</p>
+        </article>
+
+    </div>
+</div>
+<!-- 5. SECTION BẢNG GIÁ & DANH SÁCH KÊNH -->
+<div id="pricing-section" class="pricing-section">
+    <h3 class="sub-section-title"><i class="fas fa-list-alt" aria-hidden="true"></i> パック別チャンネル・料金一覧</h3>
+
+    <div class="pricing-grid">
+        <!-- Gói A Plan -->
+        <article class="pricing-card">
+            <div class="card-header border-blue">
+                <h3>Aプラン</h3>
+                <div class="channel-count">全36チャンネル</div>
+                <div class="price">40 USD <span>/ 月</span></div>
+                <div class="price-vnd">(約 84万VND / 月)</div>
+            </div>
+            <div class="card-body">
+                <ul class="channel-category-list">
+                    <li><i class="fas fa-check-circle text-blue" aria-hidden="true"></i> 地上波 (NHK, 日本テレビ, TV朝日, TBS, TV東京, フジテレビ, 関西テレビ 等)</li>
+                    <li><i class="fas fa-check-circle text-blue" aria-hidden="true"></i> BS無料放送 (NHK BS, BSプレミアム, BS日テレ, BS-TBS 等)</li>
+                    <li><i class="fas fa-check-circle text-blue" aria-hidden="true"></i> BS有料放送 (WOWOW, スターチャンネル, J SPORTS 1〜4 等)</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Gói B Plan (Nổi bật) -->
+        <article class="pricing-card featured">
+            <div class="popular-badge">一番人気</div>
+            <div class="card-header border-red">
+                <h3>Bプラン</h3>
+                <div class="channel-count">全66チャンネル</div>
+                <div class="price">50 USD <span>/ 月</span></div>
+                <div class="price-vnd">(約 104万VND / 月)</div>
+            </div>
+            <div class="card-body">
+                <ul class="channel-category-list">
+                    <li><i class="fas fa-check-circle text-red" aria-hidden="true"></i> <strong>Aプランの全36チャンネル</strong></li>
+                    <li><i class="fas fa-check-circle text-red" aria-hidden="true"></i> <strong>CS放送 (+30ch追加)</strong></li>
+                    <li class="sub-detail">Movie Plus, GAORA SPORTS, スカイA, ゴルフネットワーク, キッズステーション, ディスカバリー, CNN, 東映チャンネル, 宝塚スターステージ 等</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <!-- KHỐI ƯU ĐÃI MÁY THỨ 2 (ĐÃ LỌC BỎ DẾT DỊCH VỤ ĐIỆN THOẠI) -->
+    <div class="pricing-options-container">
+        <div class="option-card option-discount">
+            <div class="option-header">
+                <span class="option-badge"><i class="fas fa-tv" aria-hidden="true"></i> お得な2台目割引</span>
+                <p class="option-sub">リビングだけでなく、ベッドルームやお子様のお部屋でも日本のTVが楽しめます！</p>
+            </div>
+            <ul class="option-price-list">
+                <li>
+                    <span class="opt-plan">① 36ch</span>
+                    <span class="opt-price"><strong>20万 VND</strong> <small>(約1,200円) /月</small></span>
+                </li>
+                <li>
+                    <span class="opt-plan">② 66ch</span>
+                    <span class="opt-price"><strong>30万 VND</strong> <small>(約1,800円) /月</small></span>
+                </li>
+            </ul>
+            <p class="option-note">※1台目には対象となりません</p>
+        </div>
+    </div>
+</div>
+    <!-- BẢNG SO SÁNH DANH SÁCH KÊNH CHI TIẾT (100% TIẾNG NHẬT) -->
+    <div class="channel-table-section">
+        <h4 class="table-title">パック別チャンネル一覧表</h4>
+        
+        <div class="table-responsive-wrapper">
+            <table class="channel-table">
+                <thead>
+                    <tr>
+                        <th class="col-category">放送区分</th>
+                        <th class="col-plan-a">
+                            <div class="plan-head-name">Aプラン (全36ch)</div>
+                            <div class="plan-head-price">40USD/月 (約84万VND/月)</div>
+                        </th>
+                        <th class="col-plan-b">
+                            <div class="plan-head-name">Bプラン (全66ch)</div>
+                            <div class="plan-head-price">50USD/月 (約104万VND/月)</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 地上波 -->
+                    <tr>
+                        <td class="cat-cell">地上波</td>
+                        <td class="plan-a-cell">
+                            NHK総合東京, NHK Eテレ, 日本テレビ, テレビ朝日, TBSテレビ, テレビ東京, フジテレビ, TOKYO MX, NHK総合大阪, 読売テレビ, 毎日放送, 朝日放送, 関西テレビ, テレビ大阪, サンテレビ
+                        </td>
+                        <td class="plan-b-cell">
+                            <strong>NHK総合東京, NHK Eテレ, 日本テレビ, テレビ朝日, TBSテレビ, テレビ東京, フジテレビ, TOKYO MX, NHK総合大阪, 読売テレビ, 毎日放送, 朝日放送, 関西テレビ, テレビ大阪, サンテレビ</strong>
+                        </td>
+                    </tr>
+
+                    <!-- BS無料放送 -->
+                    <tr>
+                        <td class="cat-cell">BS無料放送</td>
+                        <td class="plan-a-cell">
+                            NHK BS, NHKBSP4K, BS日テレ, BS朝日, BS-TBS, BS-テレ東, BS-フジ
+                        </td>
+                        <td class="plan-b-cell">
+                            <strong>NHK BS, NHKBSP4K, BS日テレ, BS朝日, BS-TBS, BS-テレ東, BS-フジ</strong>
+                        </td>
+                    </tr>
+
+                    <!-- BS有料放送 -->
+                    <tr>
+                        <td class="cat-cell">BS有料放送</td>
+                        <td class="plan-a-cell">
+                            WOWOWプライム, WOWOWライブ, WOWOWシネマ, スターチャンネル1, スターチャンネル2, スターチャンネル3, グリーンチャンネル, BSアニマックス, J SPORTS 1, J SPORTS 2, J SPORTS 3, J SPORTS 4, 日本映画専門チャンネル, BS釣りビジョン, ディズニーチャンネル, BS松竹東急
+                        </td>
+                        <td class="plan-b-cell">
+                            <strong>WOWOWプライム, WOWOWライブ, WOWOWシネマ, スターチャンネル1, スターチャンネル2, スターチャンネル3, グリーンチャンネル, BSアニマックス, J SPORTS 1, J SPORTS 2, J SPORTS 3, J SPORTS 4, 日本映画専門チャンネル, BS釣りビジョン, ディズニーチャンネル, BS松竹東急</strong>
+                        </td>
+                    </tr>
+
+                    <!-- CS放送 -->
+                    <tr>
+                        <td class="cat-cell highlight-cat">CS放送</td>
+                        <td class="plan-a-cell not-supported">
+                            <span class="no-icon">ー</span> 対象外
+                        </td>
+                        <td class="plan-b-cell cs-list">
+                            衛星劇場, Movie Plus HD, GAORA SPORTS, スカイA sports+, 日テレG+HD, ゴルフネットワークHD, 時代劇専門チャンネル, ファミリー劇場 HD, ホームドラマチャンネル, MONDO TV, フジテレビNEXT, 女性チャンネル LaLa TV, Music Japan TV, スペースシャワーTV, MTV HD, 洋画ポップスチャンネル, カートゥーンネットワーク, キッズステーション HD, DISNEY Junior, ディスカバリーチャンネル, アニマルプラネット, ヒストリーチャンネル, ナショナルジオグラフィック, TBSニュースバード, 旅チャンネル, BBC WORLD NEWS, CNN j, 東映チャンネル, TAKARAZUKA STAR STAGE, チャンネル銀河 時代劇 ドラマ サスペンス 日本のうた
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Banner Khuyến mãi -->
+    <div class="discount-banner">
+        <h4><i class="fas fa-gift" aria-hidden="true"></i> まとめ払いがお得！お得な割引プラン</h4>
+        <div class="discount-grid">
+            <div class="discount-item">
+                <span class="disc-title">5ヵ月分のお支払いで</span>
+                <span class="disc-desc"><strong>6ヵ月</strong> 視聴可能 <small>(1ヵ月分無料！)</small></span>
+            </div>
+            <div class="discount-item">
+                <span class="disc-title">10ヵ月分のお支払いで</span>
+                <span class="disc-desc"><strong>12ヵ月</strong> 視聴可能 <small>(2ヵ月分無料！)</small></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+               <!-- 6. SECTION QUY TRÌNH SỬ DỤNG (THAY THẾ CHO 3 THẺ CŨ) -->
+<section id="workflow-section" class="step-flow-section">
+    <div class="step-flow-header">
+        <h3>BB MAXご利用までの流れ</h3>
+    </div>
+
+    <div class="step-flow-container">
+        <!-- STEP 1 -->
+        <div class="step-card">
+            <div class="step-badge">
+                <span>STEP</span>
+                <strong>1</strong>
+            </div>
+            <div class="step-content">
+                <h4>お申込み窓口にご連絡ください。</h4>
+                <p class="step-desc">お電話かWEBサイトよりお申し込み下さい。ご不明な点がございましたら下記の電話番号までお気軽にご連絡下さいませ。</p>
+                
+                <div class="step-contact-box">
+                    <div class="contact-col">
+                        <span class="contact-label"><i class="fas fa-circle"></i> WEBからの各種お申込み・お問合せ</span>
+                        <div class="btn-action-group">
+                            <a href="moshikomi.html" class="btn-step-red">お申し込み</a>
+                            <a href="contact.html" class="btn-step-green">お問い合わせ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="step-card">
+            <div class="step-badge">
+                <span>STEP</span>
+                <strong>2</strong>
+            </div>
+            <div class="step-content">
+                <h4>申込内容の確認・端末の設置</h4>
+                <p class="step-desc">お申し込みの内容を元に、お客様のお住まいのエリアでご利用いただけるかを確認させていただいた上で設置にうかがいます。本契約以降、【無料キャンペーン】などの適用がございます。※都度キャンペーン内容は変動いたしますのでお問い合わせくださいませ。</p>
+            </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="step-card">
+            <div class="step-badge">
+                <span>STEP</span>
+                <strong>3</strong>
+            </div>
+            <div class="step-content">
+                <h4>ご利用開始</h4>
+                <p class="step-desc">設置完了後、すぐにご利用可能です。7日間の無料体験もお楽しみいただけます。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact-section">
+    <div class="footer-container">
+        <!-- Cột 1: Branding & Trust Signals -->
+        <div class="footer-col footer-brand">
+            <img src="images/BBMAX.svg" alt="BBMAX Logo" class="footer-logo">
+            <p class="brand-desc">海外で日本のテレビ視聴！</p>
+
+            <!-- Tăng độ uy tín với Trust Badges -->
+            <div class="trust-badges">
+                <div class="badge-item">
+                    <span class="badge-icon">🎧</span>
+                    <span>安心の日本語サポート</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cột 2: Links & Legal -->
+        <div class="footer-col">
+            <h4 class="footer-title">クイックリンク</h4>
+            <ul class="footer-links">
+                <li><a href="#details-section">サービスの詳細</a></li>
+                <li><a href="#pricing-section">サービス料金</a></li>
+                <li><a href="#workflow-section">ご利用開始の流れ</a></li>
+                <li><a href="faq.html">よくある質問・不具合解決</a></li>
+            </ul>
+        </div>
+
+        <!-- Cột 3: Contact Info & Mini Map -->
+        <div class="footer-col footer-contact">
+            <h4 class="footer-title">
+    <a href="https://bbmaxgroup.amebaownd.com" target="_blank" rel="noopener noreferrer" class="footer-link-group">
+        BBMAXグループについて
+    </a>
+</h4>
+            <ul class="contact-info">
+                <li>
+                    <span class="contact-icon">📞</span>
+                    <div>
+                        <strong>電話番号:</strong><br>
+                        <a href="tel:02836366217">028-3636-6217 (本社)</a> / 
+                        <a href="tel:0939056990">093-905-6990</a> /
+                        <a href="tel:0903337460">090-333-7460</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <strong>住所:</strong> L6-38OT01, 38Floor, Lux 6 Vinhomes Golden River, 2 Ton Duc Thang street, Dist. 1, Ho Chi Minh City, Vietnam
+                        
+                        <!-- Google Maps thu nhỏ -->
+                        <div class="footer-map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4587883204276!2d106.70519397573616!3d10.776127659195353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fba3fe4757d%3A0x277730b0f438970e!2sVinhomes%20Golden%20River!5e0!3m2!1svi!2s!4v1710000000000!5m2!1svi!2s" 
+                                width="100%" 
+                                height="120" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="contact-icon">⏰</span>
+                    <div><strong>営業時間:</strong>月〜土 9:00〜18:00（日・ベトナムの祝日は定休）</div>
+                </li>
+                <li>
+                    <span class="contact-icon">✉️</span>
+                    <div>
+                            <strong>メール:</strong><br>
+                            bbinfotv@bbmax.net
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Bar (Payment + Copyright) -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="payment-methods">
+                <span>対応決済:</span>
+                <span class="pay-card">VISA</span>
+                <span class="pay-card">Mastercard</span>
+            </div>
+            <p class="copyright">&copy; 2026 海外で日本のテレビ視聴！</p>
+        </div>
+    </div>
+</footer>
+    <!-- SCRIPT HAMBURGER MENU -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const closeBtn = document.getElementById('closeBtn');
+            const sideMenu = document.getElementById('sideMenu');
+            const menuOverlay = document.getElementById('menuOverlay');
+            const menuLinks = document.querySelectorAll('.side-menu-links a');
+
+            function openMenu() {
+                sideMenu.classList.add('active');
+                menuOverlay.classList.add('active');
+            }
+
+            function closeMenu() {
+                sideMenu.classList.remove('active');
+                menuOverlay.classList.remove('active');
+            }
+
+            if (hamburgerBtn) hamburgerBtn.addEventListener('click', openMenu);
+            if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+            if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+
+            // Tự động đóng menu khi bấm vào link trong sidebar
+            menuLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+        });
+    </script>
+</body>
+</html>
